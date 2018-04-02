@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ]
+    },
+    "types": [
+        "highcharts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

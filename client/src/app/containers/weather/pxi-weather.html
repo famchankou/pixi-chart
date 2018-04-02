@@ -1,0 +1,13 @@
+<section class="pxi-weather container-fluid">
+    <section class="pxi-weather__chart">
+        <header class="pxi-weather__header">
+            <h4>{{weatherTitle}}</h4>
+        </header>
+        <article class="pxi-weather__content">
+            <pxi-weather-chart [preloadedData]="preloadedWeatherData"></pxi-weather-chart>
+        </article>
+        <article class="pxi-weather__content">
+            <pxi-animation></pxi-animation>
+        </article>
+    </section>
+</section>
