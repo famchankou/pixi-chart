@@ -1,13 +1,13 @@
-/coverage/
-/dist*/
-/node_modules/
+coverage/
+dist*/
+node_modules/
 
 npm-debug.log
 debug.log
 TESTS-PhantomJS_2.1.1_*.xml
 TESTS-*
 .npmrc
-/.vscode/
-/.idea/
+.vscode/
+.idea/
 tsconfig.json
-/.idea
+.idea
