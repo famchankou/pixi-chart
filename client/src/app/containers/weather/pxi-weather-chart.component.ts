@@ -8,20 +8,20 @@ import {
     Input,
     SimpleChanges,
     ChangeDetectionStrategy
-} from '@angular/core';
-import * as Highcharts from 'highcharts';
+} from "@angular/core";
+import * as Highcharts from "highcharts";
 import { PxiWeather } from "./pxi-weather";
 import { PxiWeatherService } from "./pxi-weather.service";
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
-    selector: 'pxi-weather-chart',
+    selector: "pxi-weather-chart",
     template: `<section #chartcontainer style="min-width: 310px; height: 400px; margin: 0 auto"></section>`
 })
 
 export class PxiWeatherChartComponent implements AfterViewInit, OnDestroy, OnChanges {
 
-    @ViewChild('chartcontainer') chartElement: ElementRef;
+    @ViewChild("chartcontainer") chartElement: ElementRef;
 
     @Input() public preloadedData: any;
 
@@ -51,7 +51,7 @@ export class PxiWeatherChartComponent implements AfterViewInit, OnDestroy, OnCha
 
         if (this.chartElement && this.chartElement.nativeElement) {
             options.chart = {
-                type: 'spline',
+                type: "spline",
                 renderTo: this.chartElement.nativeElement,
                 marginRight: 10,
                 events: {
@@ -91,12 +91,12 @@ export class PxiWeatherChartComponent implements AfterViewInit, OnDestroy, OnCha
                 plotLines: [{
                     value: 0,
                     width: 1,
-                    color: '#808080'
+                    color: "#808080"
                 }]
             },
             series: [{
                 /* tslint:disable */
-                name: 'Weather Point',
+                name: "Weather Point",
                 data: (function () {
                     let data = [];
                     let time = (new Date()).getTime();
@@ -114,7 +114,7 @@ export class PxiWeatherChartComponent implements AfterViewInit, OnDestroy, OnCha
             // Renders HTML Template
             // tooltip: {
             //     formatter: () => {
-            //         return '<b>' + '</b><br/>' + '<br/>';
+            //         return "<b>" + "</b><br/>" + "<br/>";
             //     }
             // },
             credits: {
@@ -132,7 +132,7 @@ export class PxiWeatherChartComponent implements AfterViewInit, OnDestroy, OnCha
     public updateChartData(data?: PxiWeather): void {
         if (this.chart) {
             // console.log(`Time: ${data.time}, Temperature: ${data.temperature}`);
-            this.chart['series'][0].addPoint([(new Date()).getTime(), data.temperature], true, true);
+            this.chart["series"][0].addPoint([(new Date()).getTime(), data.temperature], true, true);
         }
     }
 

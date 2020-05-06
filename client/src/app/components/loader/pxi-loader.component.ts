@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy, Input, ViewEncapsulation } from '@angular/core';
-import { PxiLoaderService } from './pxi-loader.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Component, OnInit, OnDestroy, Input, ViewEncapsulation } from "@angular/core";
+import { PxiLoaderService } from "./pxi-loader.service";
+import { Subscription } from "rxjs/Subscription";
 
 @Component({
     selector: "pxi-loader",
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs/Subscription';
 export class PxiLoaderComponent implements OnDestroy {
 
     private _template = `<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
-    private _loadingText = '';
+    private _loadingText = "";
     private _threshold = 500;
     private _zIndex = 9999;
     
@@ -40,7 +40,7 @@ export class PxiLoaderComponent implements OnDestroy {
         let timer: any;
 
         this.subscription =
-            this.spinnerService.getMessage().subscribe(show => {
+            this.spinnerService.getMessage().subscribe((show: boolean) => {
             if (show) {
                 if (timer) {
                     return;

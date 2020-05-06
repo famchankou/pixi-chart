@@ -1,13 +1,13 @@
-import { Component, AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import * as PIXI from 'pixi.js';
-import { PxiAnimationService } from './pxi-animation.service';
+import { Component, AfterViewInit, ElementRef, Renderer2 } from "@angular/core";
+import { FormBuilder } from "@angular/forms";
+import * as PIXI from "pixi.js";
+import { PxiAnimationService } from "./pxi-animation.service";
 
 import { PxiWeather } from "./pxi-weather";
 import { PxiWeatherService } from "./pxi-weather.service";
 
 @Component({
-    selector: 'pxi-animation',
+    selector: "pxi-animation",
     template: require("./pxi-animation.html"),
     providers: [PxiAnimationService]
 })
@@ -78,7 +78,7 @@ export class PxiAnimationComponent implements AfterViewInit {
 
     public addTemperatureLegendPoint(height: number, point: number, params: any, callback: () => any): void {
         let label: PIXI.Text = new PIXI.Text(`${callback()}`, {
-            fontFamily: 'Roboto', fontSize: 12, fill: 0x4D4D4D, align: 'center'
+            fontFamily: "Roboto", fontSize: 12, fill: 0x4D4D4D, align: "center"
         });
 
         label.x = params.leftOffset - 25;
@@ -167,7 +167,7 @@ export class PxiAnimationComponent implements AfterViewInit {
 
         let legendText: string = "Temperature";
         let legend: PIXI.Text = new PIXI.Text(`${legendText}`, {
-            fontFamily: 'Roboto', fontSize: 12, fill: 0x4D4D4D, align: 'center'
+            fontFamily: "Roboto", fontSize: 12, fill: 0x4D4D4D, align: "center"
         });
 
         legend.x = 13;
@@ -182,7 +182,7 @@ export class PxiAnimationComponent implements AfterViewInit {
 
         let legendText: string = "Time";
         let legend: PIXI.Text = new PIXI.Text(`${legendText}`, {
-            fontFamily: 'Roboto', fontSize: 12, fill: 0x4D4D4D, align: 'center'
+            fontFamily: "Roboto", fontSize: 12, fill: 0x4D4D4D, align: "center"
         });
 
         legend.x = containerWidth / 2;

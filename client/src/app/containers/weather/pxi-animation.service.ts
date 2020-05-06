@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import * as PIXI from 'pixi.js';
-const Bezier = require('bezier-js');
+import { Injectable } from "@angular/core";
+import * as PIXI from "pixi.js";
+const Bezier = require("bezier-js");
 
 @Injectable()
 export class PxiAnimationService {
@@ -57,7 +57,7 @@ export class PxiAnimationService {
         // // Draw left on canvas.
         // var canvasPieFunc = (function() {    
 
-        //     var c = document.getElementById('c1');
+        //     var c = document.getElementById("c1");
         //     c.width = WIDTH;
         //     c.height = HEIGHT;    
         //     var ctx = c.getContext("2d");
@@ -105,7 +105,7 @@ export class PxiAnimationService {
         //         g.endFill();
         //     };
 
-        //     var renderer = new PIXI.WebGLRenderer(WIDTH,HEIGHT,document.getElementById('c2'));
+        //     var renderer = new PIXI.WebGLRenderer(WIDTH,HEIGHT,document.getElementById("c2"));
         //     document.body.appendChild(renderer.view);
 
         //     var stage = new PIXI.Stage(0xe0e0e0);
@@ -175,7 +175,7 @@ export class PxiAnimationService {
         //     mouseY = renderer.height / 2;
 
         // stage.interactive = true;
-        // stage.on('mousemove',function(e){ 
+        // stage.on("mousemove",function(e){ 
         // mouseY = e.data.originalEvent.clientY;
         // mouseX = e.data.originalEvent.clientX;
         // });
@@ -210,8 +210,8 @@ export class PxiAnimationService {
         // var points = [];
         // var pointCount = 20;
 
-        // var texture = new PIXI.Texture.fromImage('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39255/tentacle.png');
-        // texture.on('update',function(){
+        // var texture = new PIXI.Texture.fromImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39255/tentacle.png");
+        // texture.on("update",function(){
 
         // var ropeLength = this.width / pointCount;
 

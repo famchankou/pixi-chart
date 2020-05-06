@@ -3,12 +3,12 @@ import { PxiWeatherComponent } from "./containers/weather/pxi-weather.component"
 
 export const pxiAppRoutes: Routes = [
     {
-        path: '',
-        redirectTo: '/weather',
-        pathMatch: 'full'
+        path: "",
+        redirectTo: "/weather",
+        pathMatch: "full"
     },
     {
-        path: 'weather',
+        path: "weather",
         component: PxiWeatherComponent
     }
 ];
