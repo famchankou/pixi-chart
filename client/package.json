@@ -4,7 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "watch": "webpack --watch --progress",
-    "build": "SET NODE_ENV=production& webpack -p --progress"
+    "build": "SET NODE_ENV=production & webpack -p --progress"
   },
   "devDependencies": {
     "@types/bezier-js": "0.0.7",
