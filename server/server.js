@@ -19,9 +19,9 @@ const weatherHistoryApiUrl = `http://history.openweathermap.org/data/2.5/history
 let Pusher = require('pusher');
 
 let pusher = new Pusher({
-    appId: '',
-    key: '',
-    secret: '',
+    appId: '493347',
+    key: '7b6933e48196a32d5c58',
+    secret: 'b7ee8b82b7df4a2c023e',
     cluster: 'eu',
     encrypted: true
 });

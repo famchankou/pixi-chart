@@ -1,7 +1,7 @@
-## Installation
+## Installation instructions
 - ```npm install``` (to install all dependencies listed on package.json)<br> 
 
-## Start
+## Start the UI applicaion
 
 |Command|Description|
 |:--:|:----------|

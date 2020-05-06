@@ -1,4 +1,4 @@
-# Embed your public key to get the Pusher started
+# Embed your public key to get the Pusher started in order to start the server API
 
 ```javascript
     var pusher = new Pusher({
